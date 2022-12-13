@@ -23,7 +23,7 @@ export class AuthResolver {
   constructor(private readonly auth: AuthService) {}
 
   @Mutation(() => Auth)
-  async signup(@Args('data') data: SignupInput) {
+  async signup(@Args("data") data: SignupInput) {
     data.pw_id = data.pw_id.toUpperCase();
     const { accessToken, refreshToken } = await this.auth.createUser(data);
     return {

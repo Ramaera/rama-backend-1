@@ -61,7 +61,7 @@ export class AuthService {
           problemField = `PlanetWay Id ${payload.pw_id}`;
         }
 
-        throw new ConflictException(`${problemField} already used122.`);
+        throw new ConflictException(`${problemField} already used.`);
       }
       throw new Error(e);
     }
