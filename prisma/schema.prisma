@@ -53,7 +53,7 @@ enum Role {
 
 enum Membership {
   BASIC
-  USER
+  ADVANCE
 }
 
 enum KYC {
