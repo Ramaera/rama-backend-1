@@ -2,7 +2,7 @@ import * as NestJsGraphQL from "@nestjs/graphql";
 
 export enum Membership {
   BASIC = "BASIC",
-  USER = "USER"
+  ADVANCE = "ADVANCE"
 }
 NestJsGraphQL.registerEnumType(Membership, {
   name: "Membership",

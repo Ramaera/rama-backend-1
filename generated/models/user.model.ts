@@ -41,7 +41,7 @@ export class User {
   role!: "ADMIN" | "USER";
 
   @NestJsGraphQL.Field(() => Membership)
-  membership_type!: "BASIC" | "USER";
+  membership_type!: "BASIC" | "ADVANCE";
 
   @NestJsGraphQL.Field(() => String, { nullable: true })
   date_of_birth?: string | null;

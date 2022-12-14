@@ -37,7 +37,7 @@ export class UserCreateWithoutDocumentsInput {
   role!: "ADMIN" | "USER";
 
   @NestJsGraphQL.Field(() => Membership, { nullable: true })
-  membership_type?: "BASIC" | "USER" | undefined;
+  membership_type?: "BASIC" | "ADVANCE" | undefined;
 
   @NestJsGraphQL.Field(() => String, { nullable: true })
   date_of_birth?: string | undefined;

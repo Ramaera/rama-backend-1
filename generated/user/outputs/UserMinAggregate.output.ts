@@ -37,7 +37,7 @@ export class UserMinAggregate {
   role!: "ADMIN" | "USER" | null;
 
   @NestJsGraphQL.Field(() => Membership, { nullable: true })
-  membership_type!: "BASIC" | "USER" | null;
+  membership_type!: "BASIC" | "ADVANCE" | null;
 
   @NestJsGraphQL.Field(() => String, { nullable: true })
   date_of_birth!: string | null;

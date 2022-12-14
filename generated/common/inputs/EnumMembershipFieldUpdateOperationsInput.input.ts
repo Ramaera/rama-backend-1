@@ -4,5 +4,5 @@ import { Membership } from "../enums";
 @NestJsGraphQL.InputType('EnumMembershipFieldUpdateOperationsInput', { isAbstract: true })
 export class EnumMembershipFieldUpdateOperationsInput {
   @NestJsGraphQL.Field(() => Membership, { nullable: true })
-  set?: "BASIC" | "USER" | undefined;
+  set?: "BASIC" | "ADVANCE" | undefined;
 }
