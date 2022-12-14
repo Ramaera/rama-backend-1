@@ -15,6 +15,7 @@ Table User {
   documents Document [not null]
   kyc KYC [not null, default: 'NOT_INITIALIZED']
   role Role [not null]
+  membership_type Membership [not null, default: 'BASIC']
   date_of_birth String
   demat_account String
   private_key String
@@ -33,6 +34,11 @@ Table Document {
 
 Enum Role {
   ADMIN
+  USER
+}
+
+Enum Membership {
+  BASIC
   USER
 }
 

@@ -29,6 +29,7 @@ model User {
   documents               Document[]
   kyc                     KYC        @default(NOT_INITIALIZED)
   role                    Role
+  membership_type         Membership @default(BASIC)
   date_of_birth           String?
   demat_account           String?
   private_key             String?
@@ -47,6 +48,11 @@ model Document {
 
 enum Role {
   ADMIN
+  USER
+}
+
+enum Membership {
+  BASIC
   USER
 }
 
